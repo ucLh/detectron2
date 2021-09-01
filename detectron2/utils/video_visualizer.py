@@ -118,7 +118,7 @@ class VideoVisualizer:
         """
         # don't need to do anything special
         frame_visualizer = Visualizer(frame, self.metadata)
-        frame_visualizer.draw_sem_seg(sem_seg, area_threshold=None)
+        frame_visualizer.draw_sem_seg(sem_seg, area_threshold=None, alpha=1)
         return frame_visualizer.output
 
     def draw_panoptic_seg_predictions(
